@@ -23,8 +23,8 @@ import (
 	"sync"
 	"time"
 
-	util "github.com/alibabacloud-go/tea-utils/v2/service"
 	"github.com/rancher/muchang/utils/debug"
+	util "github.com/rancher/muchang/utils/tea-utils/service"
 	"github.com/rancher/muchang/utils/tea/utils"
 
 	"golang.org/x/net/proxy"

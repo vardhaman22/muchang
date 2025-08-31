@@ -5,9 +5,9 @@ import (
 	"context"
 	"encoding/hex"
 
-	"github.com/alibabacloud-go/tea/dara"
 	openapiutil "github.com/rancher/muchang/darabonba-openapi/utils"
 	spi "github.com/rancher/muchang/gateway-spi/client"
+	"github.com/rancher/muchang/utils/tea/dara"
 )
 
 // Description:

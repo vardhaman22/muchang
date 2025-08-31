@@ -32,8 +32,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/alibabacloud-go/tea/dara"
 	models "github.com/rancher/muchang/darabonba-openapi/models"
+	"github.com/rancher/muchang/utils/tea/dara"
 	"github.com/tjfoc/gmsm/sm3"
 )
 

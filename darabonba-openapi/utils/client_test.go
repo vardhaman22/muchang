@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/alibabacloud-go/tea/dara"
-	"github.com/alibabacloud-go/tea/utils"
+	"github.com/rancher/muchang/utils/tea/dara"
+	"github.com/rancher/muchang/utils/tea/utils"
 )
 
 func Test_GetROASignature(t *testing.T) {

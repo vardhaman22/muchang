@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/alibabacloud-go/tea/tea"
+	"github.com/rancher/muchang/utils/tea"
 )
 
 type BaseError interface {

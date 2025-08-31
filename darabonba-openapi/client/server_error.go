@@ -4,7 +4,7 @@ package client
 import (
 	"fmt"
 
-	"github.com/alibabacloud-go/tea/dara"
+	"github.com/rancher/muchang/utils/tea/dara"
 )
 
 type iServerError interface {
