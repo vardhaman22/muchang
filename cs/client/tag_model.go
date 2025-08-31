@@ -1,7 +1,7 @@
 package client
 
 import (
-	"github.com/alibabacloud-go/tea/dara"
+	"github.com/rancher/muchang/utils/tea/dara"
 )
 
 type iTag interface {

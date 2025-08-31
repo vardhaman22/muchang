@@ -1,9 +1,9 @@
 package client
 
 import (
-	openapi "github.com/alibabacloud-go/darabonba-openapi/v2/client"
-	openapiutil "github.com/alibabacloud-go/darabonba-openapi/v2/utils"
-	dara "github.com/rancher/muchang/utils/tea/dara"
+	openapi "github.com/rancher/muchang/darabonba-openapi/client"
+	openapiutil "github.com/rancher/muchang/darabonba-openapi/utils"
+	"github.com/rancher/muchang/utils/tea/dara"
 )
 
 type Client struct {

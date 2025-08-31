@@ -3,9 +3,9 @@ package client
 import (
 	"context"
 
-	openapiutil "github.com/alibabacloud-go/darabonba-openapi/v2/utils"
-	"github.com/alibabacloud-go/tea/dara"
-	
+	// "github.com/alibabacloud-go/tea/dara"
+	openapiutil "github.com/rancher/muchang/darabonba-openapi/utils"
+	"github.com/rancher/muchang/utils/tea/dara"
 )
 
 // Summary:
