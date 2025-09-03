@@ -895,6 +895,75 @@ func (client *Client) DescribeClusterUserKubeconfigWithContext(ctx context.Conte
 
 // Summary:
 //
+// Queries the detailed information about Kubernetes versions, including the version number, release date, expiration date, compatible OSs, and runtime.
+//
+// @param request - DescribeKubernetesVersionMetadataRequest
+//
+// @param headers - map
+//
+// @param runtime - runtime options for this request RuntimeOptions
+//
+// @return DescribeKubernetesVersionMetadataResponse
+func (client *Client) DescribeKubernetesVersionMetadataWithContext(ctx context.Context, request *DescribeKubernetesVersionMetadataRequest, headers map[string]*string, runtime *dara.RuntimeOptions) (_result *DescribeKubernetesVersionMetadataResponse, _err error) {
+	_err = request.Validate()
+	if _err != nil {
+		return _result, _err
+	}
+	query := map[string]interface{}{}
+	if !dara.IsNil(request.ClusterType) {
+		query["ClusterType"] = request.ClusterType
+	}
+
+	if !dara.IsNil(request.KubernetesVersion) {
+		query["KubernetesVersion"] = request.KubernetesVersion
+	}
+
+	if !dara.IsNil(request.Mode) {
+		query["Mode"] = request.Mode
+	}
+
+	if !dara.IsNil(request.Profile) {
+		query["Profile"] = request.Profile
+	}
+
+	if !dara.IsNil(request.QueryUpgradableVersion) {
+		query["QueryUpgradableVersion"] = request.QueryUpgradableVersion
+	}
+
+	if !dara.IsNil(request.Region) {
+		query["Region"] = request.Region
+	}
+
+	if !dara.IsNil(request.Runtime) {
+		query["runtime"] = request.Runtime
+	}
+
+	req := &openapiutil.OpenApiRequest{
+		Headers: headers,
+		Query:   openapiutil.Query(query),
+	}
+	params := &openapiutil.Params{
+		Action:      dara.String("DescribeKubernetesVersionMetadata"),
+		Version:     dara.String("2015-12-15"),
+		Protocol:    dara.String("HTTPS"),
+		Pathname:    dara.String("/api/v1/metadata/versions"),
+		Method:      dara.String("GET"),
+		AuthType:    dara.String("AK"),
+		Style:       dara.String("ROA"),
+		ReqBodyType: dara.String("json"),
+		BodyType:    dara.String("array"),
+	}
+	_result = &DescribeKubernetesVersionMetadataResponse{}
+	_body, _err := client.CallApiWithCtx(ctx, params, req, runtime)
+	if _err != nil {
+		return _result, _err
+	}
+	_err = dara.Convert(_body, &_result)
+	return _result, _err
+}
+
+// Summary:
+//
 // Queries detailed information about a task, such as the task type, status, and progress.
 //
 // @param headers - map
